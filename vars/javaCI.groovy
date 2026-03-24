@@ -5,7 +5,7 @@ def call() {
     }
 
     stage('Checkout Code') {
-        checkout scm
+        git url: 'https://github.com/rahul262-commits/demo-project.git', branch: 'main'
     }
 
     stage('Compile Code') {
